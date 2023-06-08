@@ -1,0 +1,22 @@
+package manage
+
+import "bookstore/service"
+
+type ManageGroup struct {
+	ManageAdminUserApi
+	ManageBooksCategoryApi
+	ManageBooksInfoApi
+	ManageCarouselApi
+	ManageIndexConfigApi
+	ManageOrderApi
+}
+
+var mallAdminUserService = service.ServiceGroupApp.ManageServiceGroup.ManageAdminUserService
+var mallAdminUserTokenService = service.ServiceGroupApp.ManageServiceGroup.ManageAdminUserTokenService
+var mallUserService = service.ServiceGroupApp.ManageServiceGroup.ManageUserService
+var mallBooksCategoryService = service.ServiceGroupApp.ManageServiceGroup.ManageBooksCategoryService
+var fileUploadAndDownloadService = service.ServiceGroupApp.ExampleServiceGroup.FileUploadAndDownloadService
+var mallBooksInfoService = service.ServiceGroupApp.ManageServiceGroup.ManageBooksInfoService
+var mallCarouselService = service.ServiceGroupApp.ManageServiceGroup.ManageCarouselService
+var mallIndexConfigService = service.ServiceGroupApp.ManageServiceGroup.ManageIndexConfigService
+var mallOrderService = service.ServiceGroupApp.ManageServiceGroup.ManageOrderService
